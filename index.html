@@ -1,44 +1,191 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website!</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        .menu {
+          float: left;
+          width: 20%;
+          text-align: center;
+        }
+        
+        .menu a {
+          background-color: #e5e5e5;
+          padding: 8px;
+          margin-top: 7px;
+          display: block;
+          width: 100%;
+          color: black;
+        }
+        
+        .main {
+          float: left;
+          width: 60%;
+          padding: 0 20px;
+        }
+        
+        .right {
+          background-color: #e5e5e5;
+          float: left;
+          width: 20%;
+          padding: 15px;
+          margin-top: 7px;
+          text-align: center;
+        }
+        
+        @media only screen and (max-width: 620px) {
+          /* For mobile phones: */
+          .menu, .main, .right {
+            width: 100%;
+          }
+        }
+        </style>
+    <title>About Me!</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="header">
-    <h1>About Soliyev Shoxruxbek</h1>
-    <p>My name is Shoxruxbek and I am <span style="color: yellow;"> clever</span>, <span style="color:yellow;">narcissistic</span> and <span style="color:yellow">kind</span>.</p>
-    <hr>  
-    <h2><span style="color: rgb(135, 149, 189);">My SOCIE Classes This Semester</span></h2>
-    <p>(subject/professor) </p>
-       <li>AE1 - OI</li>
-       <li>C1 - DS</li>
-       <li>ItIT - SA</li>
-       <li>P1 - RT</li>
-       <li>OOP1 - KS</li>
-       <li>PE1 - RT</li>
-       <li>AER - OI</li>
-       <li>NI - TT</li> 
-       <li>OOP1(LAB) - KS</li>
-    <h3>My Favorite Movies</h3>
-    <p>
-       1. Avengers <a href="https://kinogo.inc/films/523-mstiteli-final-2019-hd-swvisiontv4-v49-sw7.html">(IMBD)</a><br> 
-       2. After <a href="https://kinogo.inc/films/592-posle-1-hdtv-v31-kz13-tmd3-lp7-sw7.html">(IMBD)</a><br>
-       3. Legend <a href="https://kinogo.inc/films/74-legenda-2015-hd-dixitv1-hdy5-v62.html">(IMBD)</a><br>
-    </p>
-    <h4>My Moods</h4>
-    <p>Happy:
-    <img src="happy.jpg" alt="Happy" width="400" height="250">
-    Sad:
-    <img src="sad.webp" alt="Sad" width="400" height="250">
-    </p>
-    <h5>Interesting Facts About My Neighbors</h5>
-</div>
-<div class="page">  
-    <li>Tajimakhammatov Shoxruxbek: Loves playing chess.</li>
-    <li>Po'latov Komilxo'ja: He has excellent student syndrome.</li>
-</div>
-</body>
+    </head>
+  <body>
+    <header id="Soliyev_Shoxruxbek" class="header">
+        <div class="main-header" style="color: black;">
+            <nav class="main-navigation">
+                <ul class="main-navigation_items">
+                    <li class="main-navigation__item">
+                        <a href="#Soliyev_Shoxruxbek">Name</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#About_Me">
+                            About Me
+                        </a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#Hobby">
+                            Hobby
+                        </a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#video">
+                            Video
+                        </a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#contact">
+                            Contact Me
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="About_Me" class="About_Me">
+        <div class="Soliyev_Shoxruxbek-item">
+            <h1 class="items__title">Soliyev Shoxruxbek</h1>
+            <div class="Soliyev_Shoxruxbek-item item">
+                <p>Future IT specialist. Freshman at <a href="https://inha.uz/ru/ob-universtt/ob-universitete/">INHA </a> University.</p>
+            </div>
+        </div>
+    </section>
+    <section id="Hobby" class="Hobby">
+
+        <div class="hobby-items">
+            <h1 class="items__title">Hobby</h1>
+            <div class="hobby-item item">
+                <p>Watching and Playing Football.</p>
+            </div>
+            <div class="hobby-item item">
+                <p>Cooking.</p>
+            </div>
+            <div class="hobby-item item">
+                <p>Coding.</p>
+            </div>
+            <div class="hobby-item item">
+                <p>Watching Movies.</p>
+            </div>
+            <div class="hobby-item item">
+                <p>Video Making.</p>
+            </div>
+            <div class="hobby-item item">
+                <p>Listen to Music.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="video">
+        <h1 class="video-title">Favourite Musics</h1>
+        <div class="video-container">
+            <div class="music">
+                <h3 class="music-title">
+                    <a href="https://www.youtube.com/watch?v=EiAMmYbr3vA&pp=ygUScGFpbnQgdGhlIHRvd24gcmVk" class="more">
+                    Paint The Town Red
+                    </a>
+                </h3>
+                <p class="music-description">
+                    Doja Cat
+                </p>
+                <video src="Doja-Cat-Paint-The-Town-Red-Lyrics.mp4" controls class="music-video" width="400" height="250"></video>
+            </div>
+    
+            <div class="music">
+                <h3 class="music-title">
+                    <a href="https://www.youtube.com/watch?v=BVXtQxkCrdU&pp=ygUHdmVjaGVyYQ%3D%3D" class="more">
+                    Вечера
+                </a>
+                </h3>
+                <p class="music-description">
+                    Rauf & Faik
+                </p>
+                <video src="Rauf-Faik-вечера-Official-video.mp4" controls class="music-video" width="400" height="250"></video>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="opinions">
+            <h2 class="opinions-title">
+                Please write comments
+            </h2>
+            <p class="opinions-description">
+                Share your thoughts absolutely anonymous &rarr;
+                <a href="https://t.me/questianonbot?start=1891096570">
+                    Link
+                </a>
+            </p>            
+        </div>
+        <div class="me">
+            <img src="me.jpg" alt="" class="my-image" width="300" height="400">
+            <div class="me-info">
+                <h2 class="me-title">
+                    Soliyev Shoxruxbek
+                </h2>
+                <p class="my-description">
+                    If you have any questions or suggestions contact me:
+                </p>
+                <span class="my-phone">
+                    <img src="phone.webp">+998(93)649-02-60  
+                </span>
+                <div class="social-networks">
+                    <span class="social-networks__item">
+                        <a href="https://t.me/Shoxruxbek_0260" target="_blank">
+                            <img src="telegram.png" alt="Telegram Icon" >
+                        </a>
+                    </span>
+                    <span class="social-networks__item">
+                        <a href="https://instagram.com/shohruhbek_775" target="_blank">
+                            <img src="Instagram.png" alt="Instagram Icon" >
+                        </a>
+                    </span>
+                    <span class="social-networks__item">
+                        <a href="https://soliyevsh775@gmail.com" target="_blank">
+                            <img src="email.jpg" alt="email Icon" >
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+   </body>
 </html>
